@@ -13,6 +13,7 @@ RSpec.describe Enumerable do
 
       it 'returns an array with the same size as the enumerable' do
         expect(enumerable.my_map { |value| value * 2 }.size).to eq enumerable.size
+        p (enumerable.my_map { |value| value * 2 })
       end
     end
 
